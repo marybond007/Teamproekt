@@ -1,16 +1,164 @@
-.advantage {
+.about {
   width: 100%;
-  background-color: #84a178;
+  max-height: 1565px;
+  background-color: #84A178;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    max-height: 1075px;
+  }
+  @media screen and (min-width: 768px) {
+    max-height: 1228px;
+  }
 }
-.advantage-list {
+.about__label {
+  // @include font(700, 18px, 22px);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  @media screen and (min-width: 480px) {
+    // @include font(800, 30px, 36px);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+   }
+ }
+.about__title {
+// @include font(400, 30px, 38px);
+  max-width: 200px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 54px;
+ text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+ @media screen and (min-width: 480px) {
+    // @include font(800, 30px, 36px);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+ }
+  @media screen and (min-width: 768px) {
+  max-width: 454px;
+    }
+}
+.about__list-text,
+.about__list-text-one {
+  // @include font(400, 12px, 21px);
+width: 100%;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+text-align:center;
+letter-spacing: 0.04em;
+margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 8px;
+color: #FCFCFC;
+@media screen and (min-width: 320px) {
+  max-width: 220px;
+  }
+  @media screen and (min-width: 480px) {
+  max-width: 336px;
+  text-align: start;
+ }
+ @media screen and (min-width: 768px) {
+  max-width: 463px;
+ }
+ @media screen and (min-width: 1200px) {
+  font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+ }
+}
+.about__list-text-one {
+margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  margin-bottom: 8px;
+ }
+}
+.about__list-text-to {
+  display: none;
+  @media screen and (min-width: 768px) {
+  text-align: start;
+  display: block;
+  max-width: 336px;
+  font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+color: #FCFCFC;
+}
+@media screen and (min-width: 480px) {
+   }
+ @media screen and (min-width: 768px) {
+  max-width: 463px;
+ }
+ @media screen and (min-width: 1200px) {
+  font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+ }
+}
+.cow-img {
+box-shadow: 0px -20px 0 0 rgba(248, 210, 78, 0.7),  0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 140px;
+margin-left: auto;
+margin-right: auto;
+margin: 0 auto 40px auto;
+@media screen and (min-width: 768px){
+  box-shadow: 0px -25px 0 0 rgba(248, 210, 78, 0.7);
+border-radius: 1228px;
+margin-right: 32px;
+margin-bottom: 0;
+}
+@media screen and  (min-width: 1200px){
+ max-width: 490px;
+  margin-right: 100px;
+  box-shadow: 0px -40px 0 0 rgba(248, 210, 78, 0.7);
+ }
+}
+
+.button {
+  display: block;
+  width: 164px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px){
+    margin-left: 0;
+    margin-top: 50px;
+   }
+}
+.about__position {
+   @media screen and (min-width: 768px){
+    display: flex;
+    margin-bottom: 50px;
+      }
+   @media screen and (min-width: 1200px){
+    margin-bottom: 60px;
+   }
+  
+}
+// !--padding--!
+.advantage__list {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 480px) {
+ align-items: center;
+  @media screen and (min-width: 768px) {
     flex-direction: row;
   }
 }
-.advantage-list-item {
+.advantage__list-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +173,7 @@
     width: calc((100% - 32px) / 2);
   }
 }
-.advantage-item {
+.advantage__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +183,7 @@
   border-radius: 25px;
 }
 
-.advantage-list-icon {
+.advantage__list-icon {
   width: 36px;
   height: 36px;
   background-color: #f8d24e;
@@ -52,7 +200,7 @@
   color: #fcfcfc;
   margin-top: 16px;
   margin-bottom: 18px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     text-transform: none;
     font-size: 48px;
     line-height: 59px;
@@ -65,7 +213,7 @@
     margin-top: 40px;
   }
 }
-.advantage-discribe {
+.advantage__discribe {
   width: 100%;
   font-weight: 700;
   font-size: 12px;
@@ -92,7 +240,7 @@
     line-height: 28.16px;
   }
 }
-.advantage-list-item:last-child {
+.advantage__list-item:last-child {
   margin-bottom: 0;
   padding-bottom: 60px;
   @media screen and (min-width: 480px) {
